@@ -22,9 +22,11 @@ console.log('Last 3rd char is: ', lastIndexChar);
 
 console.log("========== concatenation =============== ");
 var firstName = "Jenny";
-var lastName = " Gates"
+var lastName = " Gates";
+
 var result = firstName.concat(lastName);
 console.log(result);
+// console.log(firstName+lastName);
 
 console.log("========== indexOf =============== ");
 var indexOfM = greet.indexOf('M');
@@ -49,6 +51,53 @@ var lengthBeforeTrim = str.length;
 console.log("Length before trim : ", str.length);
 var result = str.trim();
 console.log("Length after trim: ", result.length);
+
 var lengthAfterTrim = result.length;
 var result = lengthBeforeTrim - lengthAfterTrim;
 console.log('Removed extra spaces are: ', result);
+
+console.log("Remove the starting spaces:",str.trimStart());
+console.log("Remove the ending spaces:",str.trimEnd());
+
+
+console.log("========== includes() =============== ");
+var result = greet.includes('Morning');
+console.log("Is Morning word available: ", result);
+var result = greet.includes('nin');
+console.log("Is nin word available: ", result);
+var result = greet.includes('good');
+console.log("Is good word available: ", result);
+
+console.log("========== search() =============== ");
+var greet = "Good Morning";
+var result = greet.search('orn');
+console.log(result);
+var result = greet.search('after');
+console.log(result);
+
+console.log("========== slice() =============== ");
+var greet = 'Hello Good Morning!';
+var result = greet.slice(6);
+console.log(result);
+var result = greet.slice(6, 10);
+console.log(result);
+
+console.log("========== split() =============== ");
+var result = greet.split(" ");
+console.log(result);
+
+//WAP to count the total number words
+var str = "I am UI Developer";
+var words = str.split(" ");
+console.log(words);
+console.log('Total words is: ', words.length);
+console.log(`Total words is: ${words.length}`);
+// console.log(typeof words);
+
+// String template
+console.log(`I am "UI" Developer `);
+var num1 = 10;
+var num2 = 20;
+var result = num1 + num2;
+console.log("Addition of ", num1, "and ", num2, "is :", result);
+console.log(` Addition of ${num1} and ${num2}  is: ${result}`);
