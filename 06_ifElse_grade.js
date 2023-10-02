@@ -2,7 +2,8 @@
 
 var voteEligible = function(age){
     var result = +age;
-    if(age == 0 || age <= -1 || age > 130 || age==null){
+    // console.log(result);
+    if(age == 0 || age <= -1 || age > 130 || age==null || result==undefined){
         console.log(`Invalid data : ${age}`);
     }
     else{
@@ -33,3 +34,5 @@ console.log(`===========================================`);
 voteEligible(undefined);
 console.log(`===========================================`);
 voteEligible(null);
+console.log(`===========================================`);
+voteEligible('Avinash');
