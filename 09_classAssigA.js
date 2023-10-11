@@ -45,41 +45,39 @@ console.log(`===================================================`);
 console.log(`Step 2 ==> Class College with 4 properties`);
 
 class College{
-    name
-    address
-    rating
-    course
+    // name
+    // address
+    // rating
+    // course
     constructor(name,address,rating,course){
-        this.name = name;
-        this.address = address;
-        this.rating = rating;
-        this.course = course;
+        this.Name = name;
+        this.Address = address;
+        this.Rating = rating;
+        this.Course = course;
     }
     display(){
-        console.log(`College details : ${this.name},${this.address},${this.rating},${this.course}`);
+        console.log(`College details : Name==> ${this.Name} | Address==> ${this.Address} | Rating==> ${this.Rating} | Course==> ${this.Course}`);
     }
 }
 
 
-const collegeCOEP = ["COEP Technological University","Pune","AAAA+","M.E"];
-//   console.log(collegeCOEP);
+const collegeCOEP = new College("COEP Technological University","Pune","AAAA+","M.E");
+//console.log(collegeCOEP.display());
 
-const collegeAIT = ["Army Institute of Technology","Pune","AAAA+","B.E"];
+const collegeAIT = new College("Army Institute of Technology","Pune","AAAA+","B.E");
 // console.log(collegeAIT);
 
-const collegeVIIT = ["Vidya Pratishthan’s Institute of IT","Baramati","A+","MCA"];
+const collegeVIIT = new College("Vidya Pratishthan’s Institute of IT","Baramati","A+","MCA");
 //  console.log(collegeVIIT);
 
-const collegeSBPCOE = ["S.B College of Engineering","Indapur","A+","B.E"];
+const collegeSBPCOE = new College("S.B Patil College of Engineering","Indapur","A+","B.E");
 //  console.log(collegeSBPCOE);
 
 // console.log(`==============================`);
 
 const arrayCollege =[collegeCOEP,collegeAIT,collegeVIIT,collegeSBPCOE];
 for (const element of arrayCollege) {
-    // let element1 = arrayCollege[element];
-    //    console.log(`College Name==> ${element1.name} | ${element1.address} | ${element1.rating} | ${element1.course}`);
-     console.log(element);
+     element.display();
 }
 
 console.log(`=============================================`);
@@ -88,7 +86,7 @@ console.log(`Step 3==> function traverseObject() with one arg `);
 function traverseObject(objectCollege) {
     for (const key in objectCollege) {
         const element = objectCollege[key];
-        console.log(`${key} ${element} `);  
+        console.log(`${key} - ${element} `);  
         
     }
 }
