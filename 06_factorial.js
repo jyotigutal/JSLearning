@@ -31,7 +31,7 @@ factorial(5);
 // factorial(7);
 // factorial(10);
 
-console.log(`============Prime or Not ====================`);
+console.log(`============ Prime or Not ====================`);
 
 function isPrime(num) {
     let flag =true;
@@ -50,4 +50,4 @@ function isPrime(num) {
 }
 
 isPrime(11);
-// isPrime(15);
+isPrime(15);
