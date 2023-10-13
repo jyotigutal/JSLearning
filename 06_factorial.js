@@ -35,7 +35,7 @@ console.log(`============ Prime or Not ====================`);
 
 function isPrime(num) {
     let flag =true;
-    for (let index = 2; index <=num-1; index++) {
+    for (let index = 2; index <num; index++) {
         if(num % index ==0){
             flag= false;
             break;
@@ -51,3 +51,7 @@ function isPrime(num) {
 
 isPrime(11);
 isPrime(15);
+isPrime(6);
+isPrime(3);
+
+
