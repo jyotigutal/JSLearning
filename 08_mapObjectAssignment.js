@@ -38,9 +38,9 @@ bankMap.set(77884567,kotakBank);
 bankMap.set(56456177,hdfcBank);
 bankMap.set(77335468,punjabBank);
 
-// console.log(bankMap);
+ console.log(bankMap);
 
-// console.log(`=============================================`);
+ console.log(`=================Traverse the Map ================`);
 const totalKeys = bankMap.keys();
 console.log(totalKeys);
 for (const key of totalKeys) {
