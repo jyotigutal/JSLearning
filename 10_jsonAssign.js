@@ -34,3 +34,6 @@ date = data.doj;
 console.log(date);
 let d = date.split('-');
 console.log(`The joining year of employee is :${d[2]}`);
+
+// var dt = Date(data.doj);
+// console.log(dt);

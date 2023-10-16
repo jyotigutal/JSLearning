@@ -20,4 +20,4 @@ const personJson =JSON.stringify(person);
 console.log(typeof personJson);
 console.log(personJson);
 
-{"name":"Elon Musk","age":54,"totalCompany":9,"companies":{"tesla":"300B USD","twitter":"150B USD","spacex":"200B USD"},"kidsName":["Deny","Weny","Rony","Randy","Sony","Mony"]}
+`{"name":"Elon Musk","age":54,"totalCompany":9,"companies":{"tesla":"300B USD","twitter":"150B USD","spacex":"200B USD"},"kidsName":["Deny","Weny","Rony","Randy","Sony","Mony"]}`
