@@ -17,8 +17,9 @@ function FirstAndLast(str) {
 }
 
 var str = "How are you mate";
+console.log(`Given String is==> ${str}`);
 const result = FirstAndLast(str);
-console.log(result);
+console.log(`The first and last character is capital of word==> ${result}`);
 
 console.log(`=========== Remove duplicate elements from array using Set() ===================`);
 var arrayNum =[11,3,4,11,4,7,3];
