@@ -53,18 +53,20 @@ console.log(`=========================================`);
 // }
 
 
-function removeDuplicate( str , strLength) 
+function removeDuplicate(str) 
 {
-    var s = new Set();
-    for (var i = 0;i<strLength;i++)
-        s.add(str[i]);
+    var s = [];
+    for (const i of str) {
+        if(s.indexOf(i)===-1){
+            s.push(i);
+        }
+        
+    }   
+    console.log(s);
+} 
 
-    for (const v of s) {
-        console.log(v);
-}
-}
-     var str = ["geeks","for","geeks","hello"];
-    // var str =[11,22,55,44,77,55,22,11]
-    var strLength = str.length;
 
-    removeDuplicate(str, strLength);
+    //  var str = ["geeks","for","geeks","hello"];
+    var str =[11,22,55,44,77,55,22,11]
+
+    removeDuplicate(str);
