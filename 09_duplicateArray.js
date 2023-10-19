@@ -33,7 +33,7 @@ function removeDuplicate(str)
 {
     var s = [];
     for (const i of str) {
-        if(s.indexOf(i)===-1){
+          if(s.indexOf(i) ===-1){
             s.push(i);
         }     
     }   
