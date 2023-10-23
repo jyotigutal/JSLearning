@@ -44,11 +44,15 @@ console.log(`Step 1 ==> Traverse all employee details from 'TCS' `);
             console.log(arraySalaryEmp);
 
             let sum=0;
-            for (let index = 0; index < arraySalaryEmp.length; index++) {
-                 sum= sum+ arraySalaryEmp[index];
-                }
-            let avgSalary=sum/arraySalaryEmp.length;
-            console.log(`Average salary will be: ${avgSalary}`);
+            let count =arraySalaryEmp.length;
+            arraySalaryEmp.forEach(n=> sum+=n);
+                console.log(`Average salary will be: ${sum/count}`);
+            
+            // for (let index = 0; index < arraySalaryEmp.length; index++) {
+            //      sum= sum+ arraySalaryEmp[index];
+            //     }
+            // let avgSalary=sum/arraySalaryEmp.length;
+            // console.log(`Average salary will be: ${avgSalary}`);
 
             console.log(`========================================`);
             console.log(`Step 3 ==> Average salary of employee from company 'Wipro or Infy'`);
@@ -66,9 +70,10 @@ console.log(`Step 1 ==> Traverse all employee details from 'TCS' `);
               console.log(arraySalaryEmp1);
   
               let sumSalary=0;
-              for (let index = 0; index < arraySalaryEmp1.length; index++) {
-                sumSalary= sumSalary+ arraySalaryEmp1[index];
-                  }
-              let avgSalaryEmp=sumSalary/arraySalaryEmp1.length;
-              console.log(`Average salary will be: ${avgSalaryEmp}`);
+              let countEmp1 = arraySalaryEmp1.length;
+            
+              arraySalaryEmp1.forEach(n=>sumSalary+=n);
+              console.log(`Average salary will be: ${sumSalary/countEmp1}`);
+
+           
     

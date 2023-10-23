@@ -22,7 +22,6 @@ console.log(result);
 
 console.log(typeof setOfRollNum);
 
-
 for (const element of setOfRollNum) {
     console.log(element);
 }
